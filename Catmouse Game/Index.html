@@ -1,0 +1,106 @@
+
+<script src="https://code.jquery.com/jquery-3.1.1.js" integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA=" crossorigin="anonymous">
+</script>
+<script src="davidbau-jquery-turtle-8964eb0/jquery-turtle.js"></script>
+<link rel="stylesheet" href="Catmouse.css">
+<div id="score" style="float:left;">0</div>
+<div id="time" style="float:right; color:gold;">0</div>
+<br clear="all">
+<!-- <img id="cat" src="runningcat.gif"> -->
+  <!--<div id="mycursor"></div>-->
+
+
+<script type="text/javascript">
+  let run = true,
+    playing = true,
+    time =0;
+    score = 0;
+
+   // Show running timmer on upper right hand of screen
+  function timmer() {
+  if (playing) {
+    timr.text(time);
+  }
+}
+
+
+
+//calss for mice should incrament score with each mouse clicked
+class Mouse {
+    constructor(id) {
+        this.id = id;
+      $('<img />').attr({
+        'src': 'runningmouse.gif',
+        'class': 'mice',
+      }).appendTo('body');
+       $('img').click(function disappear(id) {
+          console.log('disappear');
+         $(this).css('display', 'none' );
+                $("#score").html(function point() {
+                    return score +1;
+                });
+        });
+}
+}
+
+
+const Mouse1 = new Mouse('m1');
+const Mouse2 = new Mouse('m2');
+const Mouse3 = new Mouse('m3');
+const Mouse4 = new Mouse('m4');
+const Mouse5 = new Mouse('m5');
+const Mouse6 = new Mouse('m6');
+const Mouse7 = new Mouse('m7');
+const Mouse8 = new Mouse('m8');
+const Mouse9 = new Mouse('m9');
+const Mouse10 = new Mouse('m10');
+const Mouse11 = new Mouse('m11');
+const Mouse12 = new Mouse('m12');
+
+$(document).ready(function(){
+    animateDiv();
+
+});
+
+//random move function, mice should run across page
+
+
+class Cat {
+    constructor(id) {
+        this.id = id;
+      $('<img />').attr({
+        'src': 'runningcat.gif',
+        'class': 'cat',
+      }).appendTo('body');
+}
+}
+const Kitty = new Cat('c1');
+
+//alert window that time is up
+setTimeout(function(){
+  alert('Times Up. Your Score is: ');
+}, 10000);
+
+
+//clone of mice to be used for function that replaces mice once they are  eliminated
+/*$(document).ready(function() {
+   var dup= $('#mouse');
+$('#mouse').clone ().appendTo('body');
+});*/
+
+//attempt to change cursor to  cat gif
+/*$(document).ready(function() {
+console.log($("body").length)
+    $("body").css('cursor', "url('cat.png'),auto")
+});*/
+
+
+
+/*setTimeout(function(){ alert("Hello"); }, 3000);*/
+
+/*window.setTimeout(function, milliseconds);*/
+
+
+
+
+</script>

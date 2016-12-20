@@ -1,0 +1,42 @@
+#score, #time { font: bold 48px arial; }
+
+img{
+  height: 100px;
+  width: 100px;
+}
+
+
+#m1{
+
+}
+
+#m2{
+left: 80px;
+top: 60px;
+}
+
+#m3{
+
+}
+
+#m4{
+
+}
+
+#m5{
+
+}
+
+    html{
+      background: #F0E68C;
+      position: absolute;
+
+/*#cursor {
+  position  : absolute;
+  z-index   : 10000;
+  width     : 40px;
+  height    : 40px;
+  background: transparent url(runningcat.gif) 0 0 no-repeat;
+}*/
+
+
