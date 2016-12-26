@@ -1,3 +1,9 @@
+
+html{
+  background: #F0E68C;
+    position: absolute;
+}
+
 #score, #time { font: bold 48px arial; }
 
 img{
@@ -5,31 +11,18 @@ img{
   width: 100px;
 }
 
+#mouse {
+  width: 100px;
+  height:70px;
+    background-color: red;
+      position: fixed;
+}
 
 #m1{
-
+  display: block;
+    margin: auto;
 }
 
-#m2{
-left: 80px;
-top: 60px;
-}
-
-#m3{
-
-}
-
-#m4{
-
-}
-
-#m5{
-
-}
-
-    html{
-      background: #F0E68C;
-      position: absolute;
 
 /*#cursor {
   position  : absolute;

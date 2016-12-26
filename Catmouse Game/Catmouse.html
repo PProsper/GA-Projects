@@ -1,0 +1,58 @@
+<script src="https://code.jquery.com/jquery-3.1.1.js" integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA=" crossorigin="anonymous">
+</script>
+<script src="davidbau-jquery-turtle-8964eb0/jquery-turtle.js"></script>
+<link rel="stylesheet" href="Catmouse.css">
+<div id="score" style="float:left;">0</div>
+<div id="time" style="float:right; color:gold;">0</div>
+<br clear="all">
+<!-- <img id="cat" src="runningcat.gif"> -->
+ <div id="mouse" class="mice"> <center> <img id="m1" class="mice" src="runningmouse.gif"> </center> </div>
+ <!-- <div id="mouse2" class="mice"> <center> <img id="m2" class="mice" src="runningmouse.gif">  </center> </div> -->
+ <!-- <div id="mouse3" > <h3>  C <img id="m3" class="mice" src="runningmouse.gif" style="height: 100px; width: 100px;  position: relative; "> <h3p> </div>
+<div id="mouse4" > <h3>  D <img id="m4" class="mice" src="runningmouse.gif" style="height: 100px; width: 100px;  position: relative; "> <h3p> </div>
+<div id="mouse5" > <h3>  E <img id="m5" class="mice" src="runningmouse.gif" style="height: 100px; width: 100px;  position: relative; "> <h3p> </div>
+
+<!-- <img id="mouse2" src="runningmouse.gif" style="height: 100px; width: 100px; display:none;"> -->
+
+<script>
+//$.setupids();
+ $(document).ready(function(){
+  animateDiv();
+});
+
+function makeNewPosition(){
+    // Get viewport dimensions (remove the dimension of the div)
+    var h = $(window).height() + 70;
+    var w = $(window).width() + 100;
+
+    var nh = Math.floor(Math.random() * h);
+    var nw = Math.floor(Math.random() * w);
+    return [nh,nw];
+}
+
+function animateDiv(){
+    var newq = makeNewPosition();
+    $('#mouse').animate({ top: newq[0], left: newq[10], bottom: newq[0], right: newq[10] }, function(){
+      animateDiv();
+    });
+
+};
+
+
+    var flee = true,
+    playing = true,
+    held = 0,
+    eaten = 0,
+    bonus = 0,
+    score = 0;
+
+    $("#mouse").click(function addScore(){    //when mouse clicked value incraments
+    $("#mouse").css("display","none"),
+      $("#score").html(function () { //mouse disappears on click
+        return score+1;
+     });
+    });
+
+setTimeout(function(){ alert("Time's Up! Your Score is " ); }, 3000);
+
+</script>
