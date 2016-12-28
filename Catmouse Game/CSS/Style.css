@@ -1,0 +1,64 @@
+
+html{
+  background: #F0E68C;
+}
+
+#score, #time {
+  font: bold 48px arial;
+     text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+}
+
+#reset{
+  margin-left: 40%;
+}
+
+#mouse {
+  width: 100px;
+  height:90px;
+  margin-top: 80%;
+/*    background-color: red;*/
+      position: fixed;
+}
+
+/*#mouse2 {
+  width: 50px;
+  height:20px;
+    background-color:  blue;
+    float: right;
+      position: fixed;
+}*/
+
+img{
+  height: 100px;
+  width: 100px;
+   position:  fixed;
+
+}
+
+#m1, #m2{
+   display: block;
+    margin: auto;
+
+}
+
+/*div.a {
+width: 50px;
+height:50px;
+ background-color:red;
+position:fixed;
+
+}*/
+
+/*#cursor {
+  position  : absolute;
+  z-index   : 10000;
+  width     : 40px;
+  height    : 40px;
+  background: transparent url(runningcat.gif) 0 0 no-repeat;
+}*/
+
+

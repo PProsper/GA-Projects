@@ -3,9 +3,21 @@ html{
   background: #F0E68C;
 }
 
-#score, #time { font: bold 48px arial; }
+#score, #time {
+  font: bold 48px arial;
+     text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+}
 
-#mouse {
+#reset{
+  margin-top: 90%;
+  margin-left: 40%;
+}
+
+img {
   width: 100px;
   height:90px;
     background-color: red;
