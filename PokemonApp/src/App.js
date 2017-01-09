@@ -54,7 +54,7 @@ class App extends Component {
             }
 
             return ( < div className = "App" >
-                < h1 > Make Your Own Pokemon < /h1> < div className = "planets-list-container" >
+                < h1 > Make Your Own Pokemon < /h1> < div className = "list-container" >
                 < ul className = "list" > { pokeList } < /ul> < /div> < hr / >
                 < div className = "details" > { pokeName } < div className = "weight" > { pokeWeight } < /div> < /div> < /div>
             );
